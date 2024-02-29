@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-title {
+  text-align: center;
+  color: #1b1b1b;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+.data-wrapper {
+  width: 50%;
+  border: 4px solid #f0f0f0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.data-wrapper table {
+  width: 100%;
+  border: 2px solid #ddd;
+}
+
+.data-wrapper table thead {
+  background-color: #f2f2f2;
+}
+
+.data-wrapper th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4e92f8;
+  color: white;
+}
+.form-wrapper {
+  width: 50%;
+  border: 4px solid #f0f0f0;
+  border-radius: 10px;
+}
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.form-wrapper form label {
+  font-weight: 600;
+}
+.form-wrapper form input,
+.form-wrapper form textarea {
+  border-radius: 10px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+}
+
+.form-wrapper form input,
+.form-wrapper form textarea:focus {
+  outline: none;
+}
+
+.form-wrapper form button {
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s;
+  width: 30%;
+}
+
+.form-wrapper form button:hover {
+  background-color: #4e92f8;
+  color: white;
+}
