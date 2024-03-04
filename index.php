@@ -45,7 +45,7 @@ if (count($_POST) > 0) {
     $input = $_POST;
     if ($data->save_data($input)) {
 
-        echo '<script>alert("Sukses menambahkan data")</script>';
+        echo '<script>alert("Sukses menambahkan data"); window.location="";</script>';
     } else {
         echo '<script>alert("Database bermasalah")</script>';
     }
@@ -67,6 +67,7 @@ if (count($_POST) > 0) {
     <h1 class="main-title">Registerasi Mahasiswa</h1>
     <div class="main-wrapper">
         <div class="data-wrapper">
+            <h3 style="text-align:center">Data Mahasiswa</h3>
             <table>
                 <thead>
                     <tr>
@@ -89,6 +90,7 @@ if (count($_POST) > 0) {
             </table>
         </div>
         <div class="form-wrapper">
+            <h3 style="text-align:center">Input Data Diri</h3>
             <form action="" method="post">
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" placeholder="Masukkan Nama Anda">
